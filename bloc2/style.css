@@ -268,6 +268,12 @@ img {
   font-size: 1.25rem;
 }
 
+.logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
 .logo-text {
   color: var(--text-primary);
 }
@@ -1504,12 +1510,13 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: var(--radius-xl);
-  font-size: 1.5rem;
   margin-bottom: var(--space-6);
+}
+
+.footer-logo-img {
+  height: 130px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-text {
