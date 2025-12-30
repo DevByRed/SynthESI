@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SynthESI Bloc 1 - Synthèses et ressources pour la première année à l'HE2B ESI"
+    />
+    <title>SynthESI Bloc 1 | Première année ESI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js pour le carrousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">💎</span>
+          <span class="logo-text">SynthESI</span>
+        </a>
+
+        <!-- Year Toggle -->
+        <div class="year-toggle">
+          <a href="index.html" class="year-toggle-btn active">Bloc 1</a>
+          <a href="../bloc2/index.html" class="year-toggle-btn">Bloc 2</a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#description">Description</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="packs-q1.html">Pack Q1</a></li>
+          <li><a href="packs-q2.html">Pack Q2</a></li>
+        </ul>
+
+        <a href="acheter.html" class="btn-cta navbar-cta">
+          Comment acheter un pack ?
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <main>
+      <section class="hero" id="description">
+        <!-- Hero Principal - Style Apple -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🎓</span> Pour les étudiants de l'ESI
+          </div>
+
+          <h1 class="hero-title">
+            Réussis tes examens.<br />
+            <span class="hero-title-gradient">Sans stress.</span>
+          </h1>
+
+          <p class="hero-description">
+            Des synthèses claires et structurées, conçues par des étudiants pour
+            des étudiants. Tout ce dont tu as besoin pour réviser efficacement.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#pack-q1" class="btn-hero-primary">
+              Découvrir les packs
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#avis" class="btn-hero-secondary">Voir les avis</a>
+          </div>
+        </div>
+
+        <!-- Features Pills -->
+        <div class="hero-features-container">
+          <div class="hero-feature-pill">
+            <div class="pill-icon pill-icon-blue">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+            </div>
+            <div class="pill-content">
+              <span class="pill-title">Synthèses Premium</span>
+              <span class="pill-subtitle">Claires et structurées</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-pill">
+            <div class="pill-icon pill-icon-purple">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                />
+                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="pill-content">
+              <span class="pill-title">Quiz & Vidéos</span>
+              <span class="pill-subtitle">Interactifs et ciblés</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-pill">
+            <div class="pill-icon pill-icon-green">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                />
+              </svg>
+            </div>
+            <div class="pill-content">
+              <span class="pill-title">Examens Blancs</span>
+              <span class="pill-subtitle">Corrigés détaillés</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Banner -->
+        <div class="hero-testimonial">
+          <div class="testimonial-icon">"</div>
+          <p class="testimonial-quote">
+            Ils nous ont fait confiance, ils ont réussi. On ne fait pas de
+            miracle.
+          </p>
+          <p class="testimonial-tagline">
+            On vous aide juste à <strong>mieux réviser.</strong>
+          </p>
+        </div>
+
+        <!-- Info Banner (déplacé après le testimonial) -->
+        <div class="info-banner">
+          <div class="info-banner-content">
+            <span class="info-icon">💡</span>
+            <div class="info-text">
+              <p>
+                <strong>Bon à savoir :</strong> Les packs sont payants mais
+                constituent un supplément efficace. Toute l'aide et le soutien
+                restent <strong>entièrement gratuits</strong> pour tous ! 🤝
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION CONTENU DES PACKS ========== -->
+      <section class="features-section" id="contenu">
+        <div class="container">
+          <h2 class="section-title">Ce que contiennent nos packs</h2>
+          <p class="section-subtitle">
+            Tout ce dont tu as besoin pour réussir tes examens, réuni dans un
+            seul pack.
+          </p>
+
+          <div class="features-grid">
+            <!-- Feature 1: Synthèses -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Synthèses Des Cours</h3>
+              <p class="feature-description">
+                Des fiches synthétiques, structurées et faciles à mémoriser,
+                couvrant les notions clés de la plupart des cours et
+                <strong>expliquées simplement</strong> !
+              </p>
+              <div class="feature-tag">📄 PDF haute qualité</div>
+            </div>
+
+            <!-- Feature 2: Cartes -->
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-purple">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Cartes Synthétiques</h3>
+              <p class="feature-description">
+                Pour certains cours, des <strong>cartes mémo</strong> sont
+                disponibles pour t'aider à réviser plus rapidement, façon
+                flashcards.
+              </p>
+              <div class="feature-tag">🃏 Révision rapide</div>
+            </div>
+
+            <!-- Feature 3: Quiz & Vidéos -->
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-green">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                  />
+                  <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Quiz & Vidéos</h3>
+              <p class="feature-description">
+                Des <strong>quiz interactifs</strong> sur Quizlet et des
+                <strong>vidéos explicatives</strong> ciblées pour t'entraîner
+                autrement.
+              </p>
+              <div class="feature-tag">🎬 Contenu interactif</div>
+            </div>
+
+            <!-- Feature 4: Exercices -->
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-orange">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">Exercices & Bilans</h3>
+              <p class="feature-description">
+                Des <strong>exercices corrigés</strong> et des bilans types pour
+                t'entraîner dans les
+                <strong>conditions réelles</strong> d'examen.
+              </p>
+              <div class="feature-tag">✅ Corrigés inclus</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION AVIS ========== -->
+      <section class="reviews-section" id="avis">
+        <div class="container">
+          <h2 class="section-title">
+            Ils ont utilisé SynthESI... Et ils ont réussi !
+          </h2>
+          <p class="section-subtitle">
+            Des retours 100% authentiques d'étudiants de l'ESI qui ont utilisé
+            les packs SynthESI.
+          </p>
+
+          <!-- Swiper Carousel -->
+          <div class="swiper reviews-swiper">
+            <div class="swiper-wrapper">
+              <!-- Avis Malika -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <h4 class="review-name">Malika</h4>
+                  <p class="review-text">
+                    Personnellement, même en ayant pris des notes, j'ai remarqué
+                    que ces synthèses m'ont permis de les compléter et surtout
+                    de ne rien oublier.
+                    <br /><br />
+                    J'ai pu <strong>mieux étudier</strong> et,
+                    <strong>surtout, mieux comprendre</strong> certains
+                    concepts. <br /><br />
+                    Franchement, <strong>je recommande à 100 %</strong>, et je
+                    les remercie vraiment, parce que c'est un travail en or
+                    qu'ils ont fait là !
+                  </p>
+                  <div class="review-info">
+                    <span class="review-year"
+                      >🎓 1ère année | Développement d'applications</span
+                    >
+                  </div>
+                  <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <!-- Avis Ethan -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <h4 class="review-name">Ethan</h4>
+                  <p class="review-text">
+                    Les synthèses sont vraiment complètes et très bien faites.
+                    <strong class="highlight"
+                      >J'ai eu 15 en ARC juste en étudiant la synthèse.</strong
+                    >
+                    Pareil pour Sécurité,
+                    <strong class="highlight"
+                      >moi qui n'étais jamais allée en cours</strong
+                    >, ça m'a grave aidé à tout comprendre et à réussir.
+                    Franchement <strong>je recommande à 100% !</strong>
+                  </p>
+                  <div class="review-info">
+                    <span class="review-year"
+                      >🎓 1ère année | réseaux et télécommunications</span
+                    >
+                  </div>
+                  <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <!-- Avis Imane -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <h4 class="review-name">Imane</h4>
+                  <p class="review-text">
+                    Les packs sont très bien, car ils sont bien structurés, avec
+                    pour chaque pack différentes sections. On s'y retrouve vite
+                    et on ne se perd pas dans les révisions.
+                    <br /><br />
+                    Dans les packs, il y a aussi plein d'exemples qui permettent
+                    de bien assimiler la matière et de mieux la comprendre,
+                    grâce à des exemples visuels et très simples.
+                    <br /><br />
+                    En plus de ça, il y a également des vidéos explicatives –
+                    c'est vraiment <strong>parfait</strong> !! Je mettrais
+                    <strong>5/5 sans hésiter</strong>, et je le pense vraiment.
+                  </p>
+                  <div class="review-info">
+                    <span class="review-year"
+                      >🎓 1ère année | réseaux et télécommunications</span
+                    >
+                  </div>
+                  <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <!-- Avis Kimberly -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <h4 class="review-name">Kimberly</h4>
+                  <p class="review-text">
+                    J'ai trouvé le contenu clair, bien structuré et vraiment
+                    utile pour mes révisions. Ça m'a aidé à mieux comprendre
+                    certaines notions et à gagner du temps dans ma préparation.
+                    <br /><br />
+                    Franchement, ça m'a été d'une grande aide pour réussir mes
+                    examens ! Principalement ARC, où je n'avais aucune notion,
+                    et j'ai réussi l'examen juste avec ton pack 😊
+                    <br /><br />
+                    C'est du <strong>5 étoiles sans hésiterrrr !</strong>
+                  </p>
+                  <div class="review-info">
+                    <span class="review-year"
+                      >🎓 1ère année | Développement d'applications</span
+                    >
+                  </div>
+                  <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION PACKS Q1 ========== -->
+      <section class="packs-section" id="pack-q1">
+        <div class="container">
+          <h2 class="section-title packs-title">
+            Nos Packs | Cours du Quadrimestre 1
+          </h2>
+
+          <div class="packs-cta-container">
+            <div class="warning-banner">
+              <span class="warning-icon">ℹ️</span>
+              Pour acheter un pack, cliquez sur le bouton ci-dessous
+            </div>
+            <div class="packs-buttons-row">
+              <a href="acheter.html" class="btn-cta btn-large">
+                Acheter un Pack
+              </a>
+              <a href="packs-q1.html" class="btn-secondary">
+                Voir description des packs
+              </a>
+              <a href="packs-q2.html" class="btn-secondary"> Voir Pack Q2 </a>
+            </div>
+          </div>
+
+          <div class="packs-grid">
+            <!-- Pack Dev1 Python -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=200&h=120&fit=crop"
+                  alt="Python"
+                />
+                <span class="pack-badge">python</span>
+              </div>
+              <h3 class="pack-title">
+                Dev1 - Python +
+                <span class="highlight-text">EXTENSION VSX</span>
+              </h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    ✏️ Tous les travaux pratiques (TD) corrigés avec des
+                    commentaires clairs
+                  </li>
+                  <li>📋 Tous les examens et bilans corrigés</li>
+                  <li>
+                    📚 Des synthèses précises
+                    <strong class="highlight-text"
+                      >réalisées exclusivement pour vous</strong
+                    >
+                  </li>
+                  <li>
+                    📐 Une synthèse complète de toutes les formules
+                    mathématiques importantes
+                  </li>
+                  <li>
+                    🔌 Des extensions VSX pour Visual Studio Code (Python)
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#python" class="btn-pack"
+                >📋 Détail du Pack</a
+              >
+              <div class="pack-price">15 €</div>
+            </div>
+
+            <!-- Pack ARC1 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=120&fit=crop"
+                  alt="Architecture"
+                />
+                <span class="pack-badge">ARC1</span>
+              </div>
+              <h3 class="pack-title">Architecture des ordinateurs 1 - ARC1</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Des synthèses ultra précises avec tout le résumé du cours
+                    + 📚 Des synthèses complémentaires sur tous les sujets clés
+                  </li>
+                  <li>📋 Les examens et bilans entièrement corrigés</li>
+                  <li>
+                    🎬 Des vidéos explicatives super simples réalisées
+                    <strong class="highlight-text"
+                      >exclusivement pour vous</strong
+                    >
+                  </li>
+                  <li>
+                    📐 Une synthèse complète sur tous les logigrammes à
+                    connaître
+                  </li>
+                  <li>📝 Les notes de cours</li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#arc1" class="btn-pack"
+                >📋 Détail du Pack</a
+              >
+              <div class="pack-price">20 €</div>
+            </div>
+
+            <!-- Pack EXP1 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=200&h=120&fit=crop"
+                  alt="Exploitation Système"
+                />
+                <span class="pack-badge exp-badge">EXP1</span>
+              </div>
+              <h3 class="pack-title">Exploitation Système - EXP1</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Des synthèses ultra précises avec tout le résumé du cours
+                    sur tous les chapitres
+                  </li>
+                  <li>
+                    ✏️ Une synthèse sur tous les mots en jaune à connaître
+                  </li>
+                  <li>📋 Les examens et bilans entièrement corrigés</li>
+                  <li>
+                    📝
+                    <strong class="highlight-text"
+                      >Des bilans blancs inédits créés EXCLUSIVEMENT pour vous
+                      !</strong
+                    >
+                  </li>
+                  <li>📓 Les notes de cours claires et organisées</li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#exp1" class="btn-pack"
+                >📋 Détail du Pack</a
+              >
+              <div class="pack-price">15 €</div>
+            </div>
+
+            <!-- Pack INTI Cybersécurité -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=120&fit=crop"
+                  alt="Cybersécurité"
+                />
+                <span class="pack-badge cyber-badge">🔒</span>
+              </div>
+              <h3 class="pack-title">INTI Cybersécurité - INTIS</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Des synthèses ultra précises avec tout le résumé du cours
+                    sur tous les chapitres
+                  </li>
+                  <li>
+                    ✏️ Une synthèse claire sur les chiffrements et les fonctions
+                  </li>
+                  <li>
+                    📝
+                    <strong class="highlight-text"
+                      >Des bilans blancs inédits créés EXCLUSIVEMENT pour vous
+                      !</strong
+                    >
+                  </li>
+                  <li>📓 Les notes de cours</li>
+                  <li>❓ Des Quiz sur Quizlet pour chaque chapitre !</li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#cyber" class="btn-pack"
+                >📋 Détail du Pack</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack INTI Réseau Q1 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=120&fit=crop"
+                  alt="Réseau"
+                />
+                <span class="pack-badge network-badge">🌐</span>
+              </div>
+              <h3 class="pack-title">INTI Réseau Q1 - INTR Q1</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Des synthèses ultra précises sur tous les chapitres du
+                    cours
+                  </li>
+                  <li>
+                    🎬 Une vidéo explicative sur l'exercice d'adressage IP
+                  </li>
+                  <li>
+                    📝 Des Synthèses précises
+                    <strong class="highlight-text"
+                      >réalisées EXCLUSIVEMENT pour vous !</strong
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#reseau" class="btn-pack"
+                >📋 Détail du Pack</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack MAT1 -->
+            <div class="pack-card">
+              <div class="pack-image math-image">
+                <span class="math-badge">Math 1</span>
+              </div>
+              <h3 class="pack-title">MAT1 - Mathématique 1</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>📋 Examens & bilans corrigés</li>
+                  <li>
+                    ✏️ Exercices corrigés pour chaque chapitre (<em
+                      >certains peuvent contenir des erreurs, mais rien qui
+                      empêche la bonne compréhension du sujet</em
+                    >)
+                  </li>
+                  <li>📝 Synthèses manuscrites par chapitre</li>
+                  <li>
+                    🖼️ Mini-synthèses visuelles par chapitre. Pour plusieurs
+                    chapitres, tu trouveras des synthèses visuelles : des images
+                    qui résument les formules, astuces et points clés
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q1.html#math" class="btn-pack"
+                >📦 Détail du Pack</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION PACKS Q2 ========== -->
+      <section class="packs-section packs-q2" id="pack-q2">
+        <div class="container">
+          <h2 class="section-title packs-title">
+            Nos Packs | Cours du Quadrimestre 2
+          </h2>
+
+          <div class="packs-cta-container">
+            <div class="warning-banner">
+              <span class="warning-icon">ℹ️</span>
+              Pour acheter un pack, cliquez sur le bouton ci-dessous
+            </div>
+            <div class="packs-buttons-row">
+              <a href="acheter.html" class="btn-cta btn-large">
+                Acheter un Pack
+              </a>
+              <a href="packs-q2.html" class="btn-secondary">
+                Voir description des packs
+              </a>
+            </div>
+          </div>
+
+          <div class="packs-grid">
+            <!-- Pack WEB1 -->
+            <div class="pack-card featured">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=200&h=120&fit=crop"
+                  alt="Web Development"
+                />
+                <span class="pack-badge web-badge">🌐</span>
+              </div>
+              <h3 class="pack-title">
+                WEB1 - Développement Web +
+                <span class="highlight-text">EXTENSION VSX</span>
+              </h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    ✏️ Tous les travaux pratiques (TD) corrigés avec des
+                    commentaires clairs
+                  </li>
+                  <li>📋 Tous les examens et bilans corrigés</li>
+                  <li>
+                    📚 Des synthèses précises
+                    <strong class="highlight-text"
+                      >réalisées exclusivement pour vous</strong
+                    >
+                  </li>
+                  <li>
+                    🔌 Des extensions VSX pour Visual Studio Code (Python)
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#web1" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack Don1 BD -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=200&h=120&fit=crop"
+                  alt="Base de données"
+                />
+                <span class="pack-badge db-badge">💾</span>
+              </div>
+              <h3 class="pack-title">Don1 - Base de donnée</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Toutes les synthèses théoriques pour comprendre chaque
+                    notion du cours
+                  </li>
+                  <li>
+                    ✏️ Toutes les synthèses pratiques du labo 1 – 4 avec
+                    méthodes et exemples concrets
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#don1" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack ARC2 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=120&fit=crop"
+                  alt="Architecture"
+                />
+                <span class="pack-badge arc-badge">ARC 2</span>
+              </div>
+              <h3 class="pack-title">Architecture des ordinateurs 2 - ARC 2</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Toutes les synthèses théoriques pour comprendre chaque
+                    notion du cours
+                  </li>
+                  <li>
+                    ✏️ Toutes les synthèses pratiques avec méthodes et exemples
+                    concrets
+                  </li>
+                  <li>📋 Les examens et bilans entièrement corrigés</li>
+                  <li>
+                    🎬 Des vidéos explicatives super simples réalisées
+                    <strong class="highlight-text"
+                      >exclusivement pour vous</strong
+                    >
+                  </li>
+                  <li>📓 Les notes de cours</li>
+                  <li>❓ Des Quiz sur Quizlet pour chaque chapitre !</li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#arc2" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">20 €</div>
+            </div>
+
+            <!-- Pack DEV2 Java -->
+            <div class="pack-card featured">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=120&fit=crop"
+                  alt="Java"
+                />
+                <span class="pack-badge java-badge">☕</span>
+              </div>
+              <h3 class="pack-title">DEV2 - Java</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    📚 Toutes les synthèses théoriques pour comprendre chaque
+                    notion du cours
+                    <strong>de la manière la plus simple et efficace</strong>
+                    pour chaque chapitre
+                  </li>
+                  <li>🃏 Des flashcards interactives</li>
+                  <li>
+                    ✏️ Toutes les synthèses pratiques avec méthodes et exemples
+                    concrets
+                  </li>
+                  <li>📋 Les examens et bilans entièrement corrigés</li>
+                  <li>
+                    🎬 Des vidéos explicatives super simples réalisées
+                    <strong class="highlight-text"
+                      >exclusivement pour vous</strong
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#java" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">25 €</div>
+            </div>
+
+            <!-- Pack INTI Réseau Q2 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=120&fit=crop"
+                  alt="Réseau"
+                />
+                <span class="pack-badge network-badge">🌐</span>
+              </div>
+              <h3 class="pack-title">INTI Réseau Q2 - INTR Q2</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>📚 Tous les laboratoires avec la solution Cisco</li>
+                  <li>
+                    📝 Une synthèse spéciale pour l'examen final
+                    <strong class="highlight-text"
+                      >avec toutes les commandes et réponses !!!</strong
+                    >, réalisée
+                    <strong class="highlight-text"
+                      >EXCLUSIVEMENT pour vous !</strong
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#reseau2" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack MAT2 -->
+            <div class="pack-card">
+              <div class="pack-image math-image">
+                <span class="math-badge">Math 2</span>
+              </div>
+              <h3 class="pack-title">MAT2 - Mathématique 2</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>
+                    ✏️ Exercices corrigés pour chaque chapitre (<em
+                      >certains peuvent contenir des erreurs, mais rien qui
+                      empêche la bonne compréhension du sujet</em
+                    >)
+                  </li>
+                  <li>📝 Synthèses par chapitre</li>
+                  <li>
+                    🖼️ Mini-synthèses visuelles par chapitre. Pour plusieurs
+                    chapitres, tu trouveras des synthèses visuelles : des images
+                    qui résument les formules, astuces et points clés
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#math2" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+
+            <!-- Pack 2ALG2 -->
+            <div class="pack-card">
+              <div class="pack-image">
+                <img
+                  src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=200&h=120&fit=crop"
+                  alt="Algorithmique"
+                />
+                <span class="pack-badge algo-badge">Algo 2</span>
+              </div>
+              <h3 class="pack-title">2ALG2 - Algorithmique 2</h3>
+              <div class="pack-content">
+                <p class="pack-label">🚩 Contenu du Pack :</p>
+                <ul>
+                  <li>📖 Un Notion qui contient :</li>
+                  <li>
+                    📚 Des synthèses claires, simples et concises, créées
+                    spécialement pour vous, avec des exemples supplémentaires
+                    pour bien comprendre chaque notion,
+                    <strong>comme si vous partiez de zéro</strong>
+                  </li>
+                  <li>
+                    ✏️ Des exercices 🔥 corrigés, pour chaque chapitre
+                    <strong class="highlight-text">en langage Java !</strong>
+                  </li>
+                </ul>
+              </div>
+              <a href="packs-q2.html#alg2" class="btn-pack btn-pack-red"
+                >📋 Détail du Pack Q2</a
+              >
+              <div class="pack-price">10 €</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">📚</div>
+        <p class="footer-text">
+          SynthESI est un projet créé de manière indépendante par des étudiants
+          de <strong>l'HE2B ESI</strong>, dans le but d'aider d'autres étudiants
+          à mieux réussir.
+          <em
+            >Ce projet n'est pas affilié, approuvé ou géré par l'établissement
+            HE2B ou la section ESI.</em
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Initialisation du carrousel Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const reviewsSwiper = new Swiper(".reviews-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          grabCursor: true,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
