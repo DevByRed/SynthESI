@@ -259,6 +259,7 @@
 .year-card-disabled {
   cursor: not-allowed;
   opacity: 0.85;
+  pointer-events: none;
 }
 
 .year-card-disabled:hover {
